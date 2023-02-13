@@ -11,7 +11,7 @@
     color: #f5f5f5;
     
 }
-.navbar{
+.navbar,footer{
    font-family: 'Fondamento';
    background-color: #F7E594;
 }
@@ -33,7 +33,7 @@
 }
 .fondo{
     background-color:#39D3CA;
-    height:800px;
+    height:518px;
 }
 .bandera{
     height:50px;
@@ -59,6 +59,7 @@
     display: inline-flex;
     justify-content:flex-start;
     margin-top:10px;
+    margin-bottom:20px;
     margin-right:80px;
     padding-left:2%;
 }
@@ -92,4 +93,11 @@
     border: 1px #F1E15A solid;
     padding: 5px;
     width:40%;
+}
+
+footer{
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
 }
