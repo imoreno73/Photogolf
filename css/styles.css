@@ -73,12 +73,18 @@ nav-link {
     margin-bottom: 20px;
     margin-right: 10px;
     padding-left: 2%;
+    
 }
 
 .carousel-item {
     height: 300px;
     float:left;
 }
+
+/* .carousel-inner{
+    display: inline-flex;
+    justify-content: flex-start;    
+} */
 
 .text {
     background-color: #175812;
