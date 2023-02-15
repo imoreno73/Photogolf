@@ -18,7 +18,7 @@
 
 <body>
     <div class="jumbotron">
-        <h1 class="titulo">DEVA GOLF PHOTOGOLF</h1>
+        <h1 class="titulo">PAGINA DE CONTACTO PHOTOGOLF</h1>
     </div>
 
     <nav class="navbar navbar-expand-lg">
@@ -38,7 +38,7 @@
                         <a class="nav-link aria-current=" page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./deva.html">Deva</a>
+                        <a class="nav-link" href="./deva.html">Deva</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./arcosur.html">Arcosur</a>
@@ -56,7 +56,7 @@
                         <a class="nav-link" href="./aldama.html">Aldama</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link active" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -67,54 +67,54 @@
         </div>
     </nav>
     <div class="fondo">
-        <h1 class="banner">
-            <img src='./images/banderas/Bandera de Asturias - España.svg' class="bandera col-1">
-            <span class="banner-texto col-9">Deva Golf</span>
-        </h1>
-
-
-        <div class="slider-texto">
-            <div class="slider">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/deva/1.jpg" class="d-block w-100" data-bs-interval="10000"
-                                        alt="Hoyo 15">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/deva/2.jpg" class="d-block w-100" data-bs-interval="10000"
-                                        alt="hoyo 15">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/deva/3.jpg" class="d-block w-50" data-bs-interval="10000"
-                                        alt="Hoyo 5">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="texto">
-                    <h5>Campo de golf en Gijón</br>
-                        Comunidad de Asturias.</br>
-                        Camino del Trole 1175 33394</br>
-                        http://www.devagolf.es Tfno:985133140.</br>
-                        Par 54 de 18 hoyos de 1434 metros</br>
-                        Valor del campo 51 Valor slope 63.</h5>
-                </div>
+        <form action="/formulariodecontacto" method="post">
+            <div class="espacio col-9">
+                <h3>DATOS PERSONALES</h3>
             </div>
-        </div>
+            <div class="nombre col-3">
+                <label for="Nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="Nombre">
+                <div id="Nombretexto" class="form-text">Introduzca su nombre</div>
+            </div>
+            <div class="apellidos col-5">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="Apellido">
+                <div id="apellidos" class="form-text">Introduzca sus apellidos</div>
+            </div>
+            <div class="espacio col-9">
+                <h3>DIRECCION DE CONTACTO</h3>
+            </div>
+            <div class="direccion col-5">
+                <label for="direccion" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="Direccion">
+                <div id="direccion" class="form-text">Introduzca sus direccion</div>
+            </div>
+            <div class="cp col-3">
+                <label for="cp" class="form-label">Codigo postal</label>
+                <input type="text" class="form-control" id="Cp">
+                <div id="cp" class="form-text">Introduzca sus Codigo postal</div>
+            </div>
+            <div class="email col-5">
+                <label for="InputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Introduzca su email</div>
+            </div>
+            <div class="telefono col-3">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="Telefono">
+                <div id="telefono" class="form-text">Introduzca su numero de telefono de 9 cifras</div>
+            </div>
+            <div class="mensaje col-12">
+                <label for="Inputmensaje" class="form-label">Mensaje:</label>
+                <textarea id="msg" rows="5" name="user_message"></textarea>
+                <div id="msgHelp" class="form-text">Escriba el motivo de su consulta</div>
+            </div>
+             <div class="check mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="Check1">
+                <label class="form-check-label" for="Check1">Marque esta casilla si desea que le enviemos la información a su cuenta de correo.</label>
+            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
     </div>
     <footer class="footer">
         <h3>Pagina en proceso. En breve estara actualizada.</h3>
