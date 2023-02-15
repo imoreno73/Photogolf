@@ -79,11 +79,13 @@
             <div class="nombre col-3">
                 <label for="Nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="Nombre">
+                <input type="hidden" id="NombreS" name="NombreS" value="">
                 <div id="Nombretexto" class="form-text">Introduzca su nombre</div>
             </div>
             <div class="apellidos col-5">
                 <label for="apellidos" class="form-label">Apellidos</label>
                 <input type="text" class="form-control" id="Apellido">
+                <input type="hidden" id="ApellidoS" name="ApellidoS" value="Moreno">
                 <div id="apellidos" class="form-text">Introduzca sus apellidos</div>
             </div>
             <div class="espacio col-9">
@@ -93,10 +95,12 @@
                 <label for="direccion" class="form-label">Direccion</label>
                 <input type="text" class="form-control" id="Direccion">
                 <div id="direccion" class="form-text">Introduzca sus direccion</div>
+                <input type="hidden" id="DireccionS" name="DireccionS" value="Adosinda">
             </div>
             <div class="cp col-3">
                 <label for="cp" class="form-label">Codigo postal</label>
                 <input type="text" class="form-control" id="Cp">
+                <input type="hidden" id="CpS" name="CpS" value="33222">
                 <div id="cp" class="form-text">Introduzca sus Codigo postal</div>
             </div>
             <div class="espacio col-9">
@@ -105,11 +109,13 @@
             <div class="email col-5">
                 <label for="InputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="hidden" id="EmailS" name="EmailS" value="imoreno.im69@gmail.com">
                 <div id="emailHelp" class="form-text">Introduzca su email</div>
             </div>
             <div class="telefono col-3">
                 <label for="telefono" class="form-label">Telefono</label>
                 <input type="tel" class="form-control" id="Telefono">
+                <input type="hidden" id="NombreS" name="NombreS" value="606304648">
                 <div id="telefono" class="form-text">Introduzca su numero de telefono de 9 cifras</div>
             </div>
             <div class="espacio col-9">
@@ -121,10 +127,12 @@
             <div class="mensaje col-12">
                 <!-- <label for="Inputmensaje" class="form-label">Mensaje:</label> -->
                 <textarea id="msg" class="textarea" rows="5" name="user_message"></textarea>
+                <input type="hidden" id="TextS" name="TextS" value="Ninguno">
                 <div id="msgHelp" class="form-text">Escriba el motivo de su consulta</div>
             </div>
              <div class="check mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="Check1">
+                <input type="hidden" id="CheckS" name="CheckS" value="">
                 <label class="form-check-label" for="Check1">Marque esta casilla si desea que le enviemos la información a su cuenta de correo.</label>
             </div>
 
@@ -133,14 +141,14 @@
             </div>
             
             <div class="boton">
-                <button type="submit" class="btn btn-primary">Enviar formulario</button>
+                <button type="submit" href="javascript:enviar_formulario()" class="btn btn-primary">Enviar formulario</button>
             </div>          
             
           </form>
-          <a href="javascript:enviar_formulario()">Enviar formulario</a> 
+          
     </div>
     <footer class="footer">
-        <h5>Pagina en proceso. En breve estara actualizada.</h5>
+        <img src="./images/refg.svg" class="rfeg" alt="...">
     </footer>
 
 
