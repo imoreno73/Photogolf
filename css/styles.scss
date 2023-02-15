@@ -87,11 +87,6 @@ nav-link {
     float:left;
 }
 
-/* .carousel-inner{
-    display: inline-flex;
-    justify-content: flex-start;    
-} */
-
 .text {
     background-color: $color1;
     height: 375px;
@@ -179,16 +174,50 @@ form{
     color: $color2;
 }
 
-textarea{
+.form-text{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:$color1;
+  }
+.form-label{
+    color:$color1;
+}
+.textarea{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width:80%;
     height:20%;
+    margin-top:1%;
+    margin-left:10%;
+    border-radius: 2px;
+    // background-color: $color3;
 }
-.espacio{
+.form-control{
+    background-color:$color3;
+}
+.espacio, .enviar{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-family: $font-family;
+    color: $color1;
+    background-color: $color5;
+    border-radius: 10px;
+}
+.enviar{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.boton{
+    margin-top:1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     color: $color2;
-    background-color: $color1;
+    
 }

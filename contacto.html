@@ -69,7 +69,7 @@
     <div class="fondo">
         <form action="/formulariodecontacto" method="post">
             <div class="espacio col-9">
-                <h3>DATOS PERSONALES</h3>
+                <h5>DATOS PERSONALES</h5>
             </div>
             <div class="nombre col-3">
                 <label for="Nombre" class="form-label">Nombre</label>
@@ -82,7 +82,7 @@
                 <div id="apellidos" class="form-text">Introduzca sus apellidos</div>
             </div>
             <div class="espacio col-9">
-                <h3>DIRECCION DE CONTACTO</h3>
+                <h5>DIRECCION DE CONTACTO</h5>
             </div>
             <div class="direccion col-5">
                 <label for="direccion" class="form-label">Direccion</label>
@@ -94,6 +94,9 @@
                 <input type="text" class="form-control" id="Cp">
                 <div id="cp" class="form-text">Introduzca sus Codigo postal</div>
             </div>
+            <div class="espacio col-9">
+                <h5>EMAIL Y TELEFONO DE CONTACTO</h5>
+            </div>
             <div class="email col-5">
                 <label for="InputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -104,20 +107,34 @@
                 <input type="tel" class="form-control" id="Telefono">
                 <div id="telefono" class="form-text">Introduzca su numero de telefono de 9 cifras</div>
             </div>
+            <div class="espacio col-9">
+                <h5>MOTIVO DE LA CONSULTA</h5>
+            </div>
+            <div class="espacio2 col-12">
+                <h5></h5>
+            </div>
             <div class="mensaje col-12">
-                <label for="Inputmensaje" class="form-label">Mensaje:</label>
-                <textarea id="msg" rows="5" name="user_message"></textarea>
+                <!-- <label for="Inputmensaje" class="form-label">Mensaje:</label> -->
+                <textarea id="msg" class="textarea" rows="5" name="user_message"></textarea>
                 <div id="msgHelp" class="form-text">Escriba el motivo de su consulta</div>
             </div>
              <div class="check mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="Check1">
                 <label class="form-check-label" for="Check1">Marque esta casilla si desea que le enviemos la información a su cuenta de correo.</label>
             </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+            <div class="enviar row-cols-12 col-9">
+                <h5>ENVIAR</h5>
+            </div>
+            
+            <div class="boton">
+                <button type="submit" class="btn btn-primary">Enviar formulario</button>
+            </div>          
+            
           </form>
     </div>
     <footer class="footer">
-        <h3>Pagina en proceso. En breve estara actualizada.</h3>
+        <h5>Pagina en proceso. En breve estara actualizada.</h5>
     </footer>
 
 
