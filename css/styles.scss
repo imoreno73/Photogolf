@@ -1,0 +1,165 @@
+$color1:#175812;
+$color2:#f5f5f5;
+$color3:#F7E594;
+$color4:#26E7E7;
+$color5:#F1E15A;
+$color6:#39D3CA;
+$font-family:'Fondamento';
+
+
+.jumbotron {
+    background-color: $color1;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+
+}
+
+.titulo {
+    font-family: $font-family;
+    color: $color2;
+
+}
+
+.navbar,
+footer {
+    font-family: $font-family;
+    background-color: $color3;
+}
+
+.menu {
+    color: $color4;
+}
+
+.navbar-brand,
+nav-link {
+    color: $color4;
+}
+
+.banner {
+    background-color: $color5;
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 75px;
+}
+
+.fondo {
+    background-color: $color6;
+    height: 100%;
+}
+
+.bandera {
+    height: 50px;
+    width: 75px;
+    margin-right: 80px;
+}
+
+.banner-texto {
+    font-family: $font-family;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    background-color: $color1;
+    height: 500px;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding-left: 2%;
+    
+}
+
+.carousel-item {
+    height: 300px;
+    float:left;
+}
+
+/* .carousel-inner{
+    display: inline-flex;
+    justify-content: flex-start;    
+} */
+
+.text {
+    background-color: $color1;
+    height: 375px;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
+.texto {
+    float:right;
+    background-color: $color1;
+    font-family: $font-family;
+    color: $color2;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px $color5 solid;
+    padding: 5px;
+    width: 40%;
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+
+.card-img-top{
+    height: 200px;
+    width: 100px;
+    background-color: $color5;
+    
+}
+.card{    
+    margin: 1%;
+    padding:1%;
+    height:250px; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-container {
+    background-color: $color1;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+    padding-left: 2%;    
+}
+
+.footer-home{
+    display: flex;
+    height: 100px;
+    align-items: center;
+   justify-content: center; 
+}
