@@ -17,8 +17,9 @@ Imagenes de distintos campos de Golf de P&P de España (incluidos en carpeta ima
 Iconos de distintos elementos de la pagina (incluidos en carpeta images)
 
 # Tecnologias
-Html, Javascript, Bootstrap versión 5.2.3, Css, Sass.
+Html, Javascript, Bootstrap versión 5.2.3, Css, Sass, Git.
 Php para datos de formulario.
+Sourcetree para control del repositorio (comandos hechos por terminal Bash)
 
 # Instalación
 Clonar repositorio https://github.com/imoreno73/Photogolf.git
@@ -55,6 +56,10 @@ Se comprueba la funcionalidad via web.
 
 # Desarrollo del Proyecto
 
-#### Ignacio Moreno Frison - Phone:606304648 Gijon Asturias España Año 2023 ####
-
+################################
+#### Ignacio Moreno Frison  #### 
+####    Phone:606304648     #### 
+####    Gijon Asturias      ####
+####    España Año 2023     ####
+################################
 
