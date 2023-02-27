@@ -15,10 +15,10 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Photogolf</title>
     <script>
-        function enviar_formulario(){
-           document.formulario.submit()
+        function enviar_formulario() {
+            document.formulario.submit()
         }
-    </script> 
+    </script>
 </head>
 
 <body>
@@ -64,10 +64,10 @@
                         <a class="nav-link active" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -124,28 +124,30 @@
             <div class="espacio2 col-12">
                 <h5></h5>
             </div>
-            <div class="mensaje col-12">
+            <div class="mensaje col-10">
                 <!-- <label for="Inputmensaje" class="form-label">Mensaje:</label> -->
                 <textarea id="msg" class="textarea" rows="5" name="user_message"></textarea>
                 <input type="hidden" id="TextS" name="TextS" value="Ninguno">
                 <div id="msgHelp" class="form-text">Escriba el motivo de su consulta</div>
             </div>
-             <div class="check mb-3 form-check">
+            <div class="check mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="Check1">
                 <input type="hidden" id="CheckS" name="CheckS" value="">
-                <label class="form-check-label" for="Check1">Marque esta casilla si desea que le enviemos la información a su cuenta de correo.</label>
+                <label class="form-check-label" for="Check1">Marque esta casilla si desea que le enviemos la información
+                    a su cuenta de correo.</label>
             </div>
 
             <div class="enviar row-cols-12 col-9">
                 <h5>ENVIAR</h5>
             </div>
-            
+
             <div class="boton">
-                <button type="submit" href="javascript:enviar_formulario()" class="btn btn-primary">Enviar formulario</button>
-            </div>          
-            
-          </form>
-          
+                <button type="submit" href="javascript:enviar_formulario()" class="btn btn-primary">Enviar
+                    formulario</button>
+            </div>
+
+        </form>
+
     </div>
     <footer class="footer">
         <img src="./images/refg.svg" class="rfeg" alt="...">
