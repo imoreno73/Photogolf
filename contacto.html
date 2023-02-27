@@ -23,7 +23,7 @@
 
 <body>
     <div class="jumbotron">
-        <h1 class="titulo">PAGINA DE CONTACTO PHOTOGOLF</h1>
+        <h1 class="titulo">CONTACTO A CAMPOS DE GOLF</h1>
     </div>
 
     <nav class="navbar navbar-expand-lg">
@@ -73,6 +73,23 @@
     </nav>
     <div class="fondo">
         <form action="datos.php" method="post" name="formulario">
+            <div class="espacio col-9">
+                <h5>CAMPO A CONTACTAR</h5>
+            </div>
+            <div class="campo col-4">
+                <label for="Campo" class="form-label">Campo</label>
+                <select class="form-select" aria-label="seleccion de campo">
+                    <option selected value="1">Deva</option>
+                    <option value="2">Arcosur</option>
+                    <option value="3">Las Palmeras</option>
+                    <option value="4">Paderne</option>
+                    <option value="5">Elche</option>
+                    <option value="6">Aldama</option>
+                </select>
+                <input type="hidden" id="CampoS" name="CampoS" value="">
+                <div id="Campotexto" class="form-text">Introduzca su campo</div>
+
+            </div>
             <div class="espacio col-9">
                 <h5>DATOS PERSONALES</h5>
             </div>
