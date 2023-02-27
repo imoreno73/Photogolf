@@ -119,7 +119,7 @@ footer {
     align-items: center;
     display: flex;
     height: 100px;
-    justify-content: center;
+    justify-content: start;
 }
 
 .card-img-top{
@@ -152,12 +152,6 @@ footer {
     padding-left: 2%;    
 }
 
-.footer-home{
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: start; 
-}
 form{
     display: flex;
     flex-wrap: wrap;
