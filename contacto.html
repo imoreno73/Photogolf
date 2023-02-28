@@ -16,7 +16,7 @@
     <title>Photogolf</title>
     <script>
         function enviar_formulario() {
-            document.formulario.submit()
+            document.getElementById("formulario").submit()
         }
     </script>
 </head>
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link aria-current=" page" href="./index.html">Home</a>
+                        <a class="nav-link aria-current=page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./deva.html">Deva</a>
@@ -86,6 +86,7 @@
                     <option value="5">Elche</option>
                     <option value="6">Aldama</option>
                 </select>
+                <!-- <input type="submit" value="Enviar"> -->
                 <input type="hidden" id="CampoS" name="CampoS" value="">
                 <div id="Campotexto" class="form-text">Introduzca su campo</div>
 
@@ -95,44 +96,45 @@
             </div>
             <div class="nombre col-3">
                 <label for="Nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="Nombre">
-                <input type="hidden" id="NombreS" name="NombreS" value="">
+                <input type="text" class="form-control" name="Nombre" value="">
+                <!-- <input type="submit" value="Enviar"> -->
+                <input type="hidden" id="NombreS" name="NombreS" value="ignacio">
                 <div id="Nombretexto" class="form-text">Introduzca su nombre</div>
             </div>
             <div class="apellidos col-5">
-                <label for="apellidos" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="Apellido">
+                <label for="Apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" name="Apellidos" value="">
                 <input type="hidden" id="ApellidoS" name="ApellidoS" value="Moreno">
-                <div id="apellidos" class="form-text">Introduzca sus apellidos</div>
+                <div id="Apellidos" class="form-text">Introduzca sus apellidos</div>
             </div>
             <div class="espacio col-9">
                 <h5>DIRECCION DE CONTACTO</h5>
             </div>
             <div class="direccion col-5">
-                <label for="direccion" class="form-label">Direccion</label>
-                <input type="text" class="form-control" id="Direccion">
-                <div id="direccion" class="form-text">Introduzca sus direccion</div>
+                <label for="Direccion" class="form-label">Direccion</label>
+                <input type="text" class="form-control" name="Direccion" value="">
                 <input type="hidden" id="DireccionS" name="DireccionS" value="Adosinda">
+                <div id="Direccion" class="form-text">Introduzca su direccion</div>                
             </div>
             <div class="cp col-3">
-                <label for="cp" class="form-label">Codigo postal</label>
-                <input type="text" class="form-control" id="Cp">
+                <label for="Cp" class="form-label">Codigo postal</label>
+                <input type="text" class="form-control" name="Cp" value="">
                 <input type="hidden" id="CpS" name="CpS" value="33222">
-                <div id="cp" class="form-text">Introduzca sus Codigo postal</div>
+                <div id="Cp" class="form-text">Introduzca su Codigo postal</div>
             </div>
             <div class="espacio col-9">
                 <h5>EMAIL Y TELEFONO DE CONTACTO</h5>
             </div>
             <div class="email col-5">
-                <label for="InputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <input type="hidden" id="EmailS" name="EmailS" value="imoreno.im69@gmail.com">
-                <div id="emailHelp" class="form-text">Introduzca su email</div>
+                <label for="Email" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="Email" value="" aria-describedby="emailHelp">
+                <input type="hidden" id="Emails" name="EmailS" value="imoreno.im69@gmail.com">
+                <div id="EmailHelp" class="form-text">Introduzca su email</div>
             </div>
             <div class="telefono col-3">
-                <label for="telefono" class="form-label">Telefono</label>
-                <input type="tel" class="form-control" id="Telefono">
-                <input type="hidden" id="NombreS" name="NombreS" value="606304648">
+                <label for="Telefono" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" name="Telefono" value="">
+                <input type="hidden" id="TelefonoS" name="TelefonoS" value="606304648">
                 <div id="telefono" class="form-text">Introduzca su numero de telefono de 9 cifras</div>
             </div>
             <div class="espacio col-9">
@@ -143,8 +145,8 @@
             </div>
             <div class="mensaje col-10">
                 <!-- <label for="Inputmensaje" class="form-label">Mensaje:</label> -->
-                <textarea id="msg" class="textarea" rows="5" name="user_message"></textarea>
-                <input type="hidden" id="TextS" name="TextS" value="Ninguno">
+                <textarea id="msg" name="msg" value="" class="textarea" rows="5" name="user_message"></textarea>
+                <input type="hidden" id="MsgS" name="MsgS" value="Ninguno">
                 <div id="msgHelp" class="form-text">Escriba el motivo de su consulta</div>
             </div>
             <div class="check mb-3 form-check">
@@ -159,7 +161,7 @@
             </div>
 
             <div class="boton">
-                <button type="submit" href="javascript:enviar_formulario()" class="btn btn-primary">Enviar
+                <button type="submit" onClick="enviar_formulario()" class="btn btn-primary">Enviar
                     formulario</button>
             </div>
 
