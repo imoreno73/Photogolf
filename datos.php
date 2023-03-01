@@ -1,21 +1,26 @@
-<?php error_reporting(0);
-    $campo = (string)$_POST['Campo'];
-    echo 'El campo es '. $campo;
-    $nombre = (string)$_POST['Nombre'];
-    echo 'El nombre es '. $nombre;
-    $apellidos = (string)$_POST['Apellidos'];
-    echo 'El apellido es '. $apellidos;
-    $direccion = (string)$_POST['Direccion'];
-    echo 'La direccion es '. $direccion;
-    $cp = (int)$_POST['Cp'];
-    echo 'El codigo postal es '. $cp;
-    $email = (int)$_POST['Email'];
-    echo 'El correo es '. $email;
-    $telefono = (int)$_POST['Telefono'];
-    echo 'El telefono es '. $telefono;
-    $msg = (string)$_POST['Msg'];
-    echo 'El mensaje es '. $msg;
-    $check = (string)$_POST['Check'];
-    echo 'Informacion '. $check;
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datos.php</title>
+</head>
+<body>
+
+<?php
+
+    echo "Variable $nombre: " . $_POST["nombre"];
+    echo "Variable $campo: " . $_POST["campo"];
+    echo "Variable $apellido: " . $_POST["apellido"];
+    echo "Variable $direccion: " . $_POST["direccion"];
+    echo "Variable $cp: " . $_POST["cp"];
+    echo "Variable $direccion: " . $_POST["direccion"];
+    echo "Variable $telefono: " . $_POST["telefono"];
+    echo "Variable $msg: " . $_POST["msg"];
+    echo "Variable $check: " . $_POST["check"];       
 ?>
+    
+</body>
+</html>
+
