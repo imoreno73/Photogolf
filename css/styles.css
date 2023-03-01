@@ -172,7 +172,13 @@ form {
   color: #175812;
 }
 
-.textarea {
+.form-label2 {
+  color: #175812;
+  font-family: "Fondamento";
+  margin-left: 10%;
+}
+
+.form-control2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;

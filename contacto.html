@@ -72,14 +72,15 @@
         </div>
     </nav>
     <div class="fondo">
-        <form action="datos.php" method="post" name="formulario" class="needs-validation" novalidate>
+        <form action="datos.php" method="post" name="formulario" class="was-validated" validate>
             <div class="espacio col-9">
                 <h5>CAMPO A CONTACTAR</h5>
             </div>
             <div class="campo col-4">
                 <label for="Campo" class="form-label">Campo</label>
-                <select class="form-select is-valid" id="campo" required aria-label="seleccion de campo">
-                    <option selected value="1">Deva</option>
+                <select class="form-select" id="Campo" required aria-label="seleccion de campo">
+                    <option selected value="">Seleccione un campo</option>
+                    <option value="1">Deva</option>
                     <option value="2">Arcosur</option>
                     <option value="3">Las Palmeras</option>
                     <option value="4">Paderne</option>
@@ -88,58 +89,66 @@
                 </select>
                 <input type="hidden" id="CampoS" name="CampoS" value="">
                 <div id="Campotexto" class="form-text">Introduzca su campo</div>
-                <div id="CampoFeedback" class="valid-feedback">
-                    El campo seleccionado es valido
-                </div>
-                <!-- <input type="submit" value="Enviar"> -->
-                
-
+                <div id="CampoFeedback1" class="invalid-feedback">El campo seleccionado no es valido</div>
+                <div id="CampoFeedback2" class="valid-feedback">El campo seleccionado es valido</div>             
             </div>
+
             <div class="espacio col-9">
                 <h5>DATOS PERSONALES</h5>
             </div>
             <div class="nombre col-3">
                 <label for="Nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="Nombre" value="">
-                <!-- <input type="submit" value="Enviar"> -->
+                <input type="text" class="form-control has-validation" id="Nombre" name="Nombre" value="" required>
                 <input type="hidden" id="NombreS" name="NombreS" value="ignacio">
                 <div id="Nombretexto" class="form-text">Introduzca su nombre</div>
+                <div id="NombreFeedback1" class="invalid-feedback">El nombre es invalido</div>
+                <div id="NombreFeedback2" class="valid-feedback">El nombre es valido</div>
             </div>
             <div class="apellidos col-5">
                 <label for="Apellidos" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" name="Apellidos" value="">
+                <input type="text" class="form-control has-validation" id="Apellidos" name="Apellidos" value="" required>
                 <input type="hidden" id="ApellidoS" name="ApellidoS" value="Moreno">
                 <div id="Apellidos" class="form-text">Introduzca sus apellidos</div>
+                <div id="ApellidosFeedback1" class="invalid-feedback">Apellidos invalidos</div>
+                <div id="ApellidosFeedback2" class="valid-feedback">Apellidos validos</div>
             </div>
             <div class="espacio col-9">
                 <h5>DIRECCION DE CONTACTO</h5>
             </div>
             <div class="direccion col-5">
                 <label for="Direccion" class="form-label">Direccion</label>
-                <input type="text" class="form-control" name="Direccion" value="">
+                <input type="text" class="form-control has-validation" id="Direccion" name="Direccion" value="" required>
                 <input type="hidden" id="DireccionS" name="DireccionS" value="Adosinda">
-                <div id="Direccion" class="form-text">Introduzca su direccion</div>                
+                <div id="Direccion" class="form-text">Introduzca su direccion</div>
+                <div id="DireccionFeedback1" class="invalid-feedback">Direccion invalida</div>
+                <div id="DireccionFeedback2" class="valid-feedback">Direccion valida</div>                
             </div>
             <div class="cp col-3">
                 <label for="Cp" class="form-label">Codigo postal</label>
-                <input type="text" class="form-control" name="Cp" value="">
+                <input type="text" class="form-control has-validation" id="Cp" name="Cp" value="" required>
                 <input type="hidden" id="CpS" name="CpS" value="33222">
                 <div id="Cp" class="form-text">Introduzca su Codigo postal</div>
+                <div id="CpFeedback1" class="invalid-feedback">Codigo postal invalido</div>
+                <div id="CpFeedback2" class="valid-feedback">Codigo postal valido</div>
             </div>
             <div class="espacio col-9">
                 <h5>EMAIL Y TELEFONO DE CONTACTO</h5>
             </div>
             <div class="email col-5">
                 <label for="Email" class="form-label">Email address</label>
-                <input type="email" class="form-control" name="Email" value="" aria-describedby="emailHelp">
+                <input type="email" class="form-control has-validation" id="Email" name="Email" value="" required aria-describedby="emailHelp">
                 <input type="hidden" id="Emails" name="EmailS" value="imoreno.im69@gmail.com">
                 <div id="EmailHelp" class="form-text">Introduzca su email</div>
+                <div id="EmailFeedback1" class="invalid-feedback">Correo electronico invalido</div>
+                <div id="EmailFeedback2" class="valid-feedback">Correo electronico valido</div>
             </div>
             <div class="telefono col-3">
                 <label for="Telefono" class="form-label">Telefono</label>
-                <input type="tel" class="form-control" name="Telefono" value="">
+                <input type="tel" class="form-control has-validation" id="Telefono" name="Telefono" value="" required>
                 <input type="hidden" id="TelefonoS" name="TelefonoS" value="606304648">
                 <div id="telefono" class="form-text">Introduzca su numero de telefono de 9 cifras</div>
+                <div id="TelefonoFeedback1" class="invalid-feedback text-danger">Telefono invalido</div>
+                <div id="TelefonoFeedback2" class="valid-feedback text-success">Telefono valido</div>
             </div>
             <div class="espacio col-9">
                 <h5>MOTIVO DE LA CONSULTA</h5>
@@ -148,10 +157,12 @@
                 <h5></h5>
             </div>
             <div class="mensaje col-10">
-                <!-- <label for="Inputmensaje" class="form-label">Mensaje:</label> -->
-                <textarea id="msg" name="msg" value="" class="textarea" rows="5" name="user_message"></textarea>
-                <input type="hidden" id="MsgS" name="MsgS" value="Ninguno">
+                <label for="Inputmensaje" class="form-label2">Mensaje:</label>
+                <textarea id="msg" name="msg" value="" class="form-control2 has-validation" id="Inputmensaje" rows="5" name="user_message" required></textarea>
+                <input type="hidden" name="MsgS" value="Ninguno">
                 <div id="msgHelp" class="form-text">Escriba el motivo de su consulta</div>
+                <div id="InputmensajeFeedback1" class="form-label2 invalid-feedback text-danger">Motivo de consulta invalido</div>
+                <div id="InputmensajeFeedback2" class="form-label2 valid-feedback text-success">Motivo de consulta valido</div>
             </div>
             <div class="check mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="Check1">

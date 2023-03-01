@@ -183,7 +183,12 @@ form{
 .form-label{
     color:$color1;
 }
-.textarea{
+.form-label2{
+    color:$color1;
+    font-family: $font-family;
+    margin-left: 10%;
+}
+.form-control2{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -213,9 +218,8 @@ form{
     margin-right: 15%;
 }
 .container-boton{
-    margin-top:1%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
@@ -236,3 +240,4 @@ form{
     align-items: start;
     justify-content: start;
 }
+
