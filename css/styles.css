@@ -204,6 +204,11 @@ form {
   margin-right: 15%;
 }
 
+.container-boton {
+  display: flex;
+  justify-content: center;
+}
+
 .boton {
   margin-top: 1%;
   display: flex;

@@ -72,13 +72,13 @@
         </div>
     </nav>
     <div class="fondo">
-        <form action="datos.php" method="post" name="formulario">
+        <form action="datos.php" method="post" name="formulario" class="needs-validation" novalidate>
             <div class="espacio col-9">
                 <h5>CAMPO A CONTACTAR</h5>
             </div>
             <div class="campo col-4">
                 <label for="Campo" class="form-label">Campo</label>
-                <select class="form-select" aria-label="seleccion de campo">
+                <select class="form-select is-valid" id="campo" required aria-label="seleccion de campo">
                     <option selected value="1">Deva</option>
                     <option value="2">Arcosur</option>
                     <option value="3">Las Palmeras</option>
@@ -86,9 +86,13 @@
                     <option value="5">Elche</option>
                     <option value="6">Aldama</option>
                 </select>
-                <!-- <input type="submit" value="Enviar"> -->
                 <input type="hidden" id="CampoS" name="CampoS" value="">
                 <div id="Campotexto" class="form-text">Introduzca su campo</div>
+                <div id="CampoFeedback" class="valid-feedback">
+                    El campo seleccionado es valido
+                </div>
+                <!-- <input type="submit" value="Enviar"> -->
+                
 
             </div>
             <div class="espacio col-9">
@@ -157,14 +161,16 @@
             </div>
 
             <div class="enviar row-cols-12 col-9">
-                <h5>ENVIAR</h5>
+                <h5>ENVIAR O RECARGAR FORMULARIO</h5>
             </div>
-
-            <div class="boton">
-                <button type="submit" onClick="enviar_formulario()" class="btn btn-primary">Enviar
-                    formulario</button>
+            <div class="container-boton col-10">
+                <div class="boton col-1">
+                    <button type="submit" onClick="enviar_formulario()" class="btn btn-success">Enviar</button>
+                </div>
+                <div class="boton col-1">
+                    <a href="./contacto.html" class="btn btn-warning">Recargar</a>
+                </div>
             </div>
-
         </form>
 
     </div>

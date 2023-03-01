@@ -1,21 +1,21 @@
-<?php
-    $campo = $_POST['Campo'];
+<?php error_reporting(0);
+    $campo = (string)$_POST['Campo'];
     echo 'El campo es '. $campo;
-    $nombre = $_POST['Nombre'];
+    $nombre = (string)$_POST['Nombre'];
     echo 'El nombre es '. $nombre;
-    $apellidos = $_POST['Apellidos'];
+    $apellidos = (string)$_POST['Apellidos'];
     echo 'El apellido es '. $apellidos;
-    $direccion = $_POST['Direccion'];
+    $direccion = (string)$_POST['Direccion'];
     echo 'La direccion es '. $direccion;
-    $cp = $_POST['Cp'];
+    $cp = (int)$_POST['Cp'];
     echo 'El codigo postal es '. $cp;
-    $email = $_POST['Email'];
+    $email = (int)$_POST['Email'];
     echo 'El correo es '. $email;
-    $telefono = $_POST['Telefono'];
+    $telefono = (int)$_POST['Telefono'];
     echo 'El telefono es '. $telefono;
-    $msg = $_POST['Msg'];
-    echo 'El mensaje es '. $Msg;
-    $check = $_POST['Check'];
-    echo 'Informacion '. $Check;
+    $msg = (string)$_POST['Msg'];
+    echo 'El mensaje es '. $msg;
+    $check = (string)$_POST['Check'];
+    echo 'Informacion '. $check;
     
 ?>
