@@ -16,7 +16,8 @@
     <title>Photogolf</title>
     <script>
         function enviar_formulario() {
-            document.getElementById("formulario").submit()
+            alert("Formulario enviado desde Java Script");
+            document.getElementById('form').submit();
         }
     </script>
 </head>
@@ -74,7 +75,7 @@
         </div>
     </nav>
     <div class="fondo">
-        <form action="datos.php" method="post" id="formulario" class="was-validated" validate>
+        <form action="C:\xampp\htdocs\datos.php" method="post" id="form" class="was-validated" validate>
             <div class="espacio col-9">
                 <h5>CAMPO A CONTACTAR</h5>
             </div>
@@ -124,7 +125,7 @@
             </div>
             <div class="cp col-3">
                 <label for="Cp" class="form-label">Codigo postal</label>
-                <input type="text" class="form-control has-validation" id="Cp" name="cp" value="" required>
+                <input type="text" class="form-control has-validation" id="Cp" name="cp" value="" maxlength="5" required>
                 <div id="Cp" class="form-text">Introduzca su Codigo postal</div>
                 <div id="CpFeedback1" class="invalid-feedback">Codigo postal invalido</div>
                 <div id="CpFeedback2" class="valid-feedback">Codigo postal valido</div>
@@ -141,7 +142,7 @@
             </div>
             <div class="telefono col-3">
                 <label for="Telefono" class="form-label">Telefono</label>
-                <input type="tel" class="form-control has-validation" id="telefono" name="Telefono" value="" required>
+                <input type="tel" class="form-control has-validation" id="telefono" name="Telefono" maxlength="9" value="" required>
                 <div id="telefono" class="form-text">Introduzca su numero de telefono de 9 cifras</div>
                 <div id="TelefonoFeedback1" class="invalid-feedback text-danger">Telefono invalido</div>
                 <div id="TelefonoFeedback2" class="valid-feedback text-success">Telefono valido</div>

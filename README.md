@@ -26,11 +26,17 @@ Clonar repositorio https://github.com/imoreno73/Photogolf.git
 Generar carpeta en el escritorio que contenga los archivos del repositorio
 
 1.- git init
+
 2.- touch .gitgnore (añadimos node_modules)
+
 3.- git clone https://github.com/imoreno73/Photogolf.git
+
 4.- npm init
+
 5.- npm i bootstrap@5.2.3
+
 6.- npm install -g sass
+
 
 ## instalacion de scripts
 
@@ -52,6 +58,7 @@ Se comprueba la funcionalidad via web.
 
 # Produccion
 
+Se usara algun programa que facilite el paso a producción (pendiente por determinar)
 
 
 # Desarrollo del Proyecto
