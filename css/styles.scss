@@ -73,7 +73,7 @@ nav-link {
     align-items: center;
 }
 
-.slider-textp{
+.slider-texto{
     height: 95%;
 }
 
@@ -88,14 +88,20 @@ nav-link {
     margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 10px;
-    padding-left: 2%;
+    padding-left: 1%;
+    border: 5px $color5 solid;
     
 }
 
-.carousel-item {
-    margin: 30px;
-    height: 800px;
+.carousel-item{
+    max-height:800px;
     float:left;
+    //border: 3px $color5 solid;
+    padding:1%; 
+    margin:1%;
+    display:inline-flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .text {
@@ -121,7 +127,7 @@ nav-link {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    border: 1px $color5 solid;
+    border: 3px $color5 solid;
     padding: 5px;
     width: 40%;
 }
