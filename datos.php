@@ -7,20 +7,26 @@
     <title>datos.php</title>
 </head>
 <body>
-
+    <h3>Informacion Obtenida</h3>    
+</body>
 <?php
 
-    echo "Variable $nombre: " . $_POST["nombre"];
-    echo "Variable $campo: " . $_POST["campo"];
-    echo "Variable $apellido: " . $_POST["apellido"];
-    echo "Variable $direccion: " . $_POST["direccion"];
-    echo "Variable $cp: " . $_POST["cp"];
-    echo "Variable $direccion: " . $_POST["direccion"];
-    echo "Variable $telefono: " . $_POST["telefono"];
-    echo "Variable $msg: " . $_POST["msg"];
-    echo "Variable $check: " . $_POST["check"];       
+    $nombre=$_POST['nom'];
+    $campo= $_POST['camp'];
+    $apellido= $_POST['last'];
+    $direccion= $_POST['dir'];
+    $cp=$_POST['codigo'];
+    $telefono= $_POST['tel'];
+    $msg= $_POST['mess'];
+    $check= $_POST['chk'];
+    echo   "Nombre:$nombre<br>
+            Campo:$campo<br>
+            Apellido:$apellido<br>
+            Direccion:$direccion<br>
+            Codigo postal:$cp<br>
+            Telefono:$telefono<br>
+            Mensage:$msg<br>
+            Check:$check"       
 ?>
-    
-</body>
 </html>
 

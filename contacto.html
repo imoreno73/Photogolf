@@ -15,10 +15,20 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Photogolf</title>
     <script>
-        function enviar_formulario() {
+        // function enviar_formulario() {
             alert("Formulario enviado desde Java Script");
-            document.getElementById('form').submit();
-        }
+            document.getElementById('enviar').addEventListener('click', function(e){
+                e.preventDefault();
+                let form= document.getElementById('form');
+                let data= new new FormData(form);
+                fetch('php/datos.php',{
+                    method: 'POST',
+                    body:data
+                }).then(data, datos.json())
+                .then(datosformulario=>{console.log(datosformulario);})
+            });
+            // document.getElementById('enviar').submit();
+        // }
     </script>
 </head>
 
@@ -75,7 +85,8 @@
         </div>
     </nav>
     <div class="fondo">
-        <form action="C:\xampp\htdocs\datos.php" method="post" id="form" class="was-validated" validate>
+        <form method="post" action="C:\xampp\htdocs\datos.php" id="form" class="was-validated" validate>
+            
             <div class="espacio col-9">
                 <h5>CAMPO A CONTACTAR</h5>
             </div>
@@ -171,7 +182,7 @@
             </div>
             <div class="container-boton col-10">
                 <div class="boton col-1">
-                    <button type="submit" onClick="enviar_formulario()" class="btn btn-success">Enviar</button>
+                    <button type="submit" id="enviar" class="btn btn-success">Enviar</button>
                 </div>
                 <div class="boton col-1">
                     <a href="./contacto.html" class="btn btn-warning">Recargar</a>

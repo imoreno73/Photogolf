@@ -9,6 +9,9 @@ https://www.figma.com/file/QILBcWERJV9UiH4k94RX1T/PhotoGolf?node-id=0%3A1&t=THDn
 # Estado del proyecto
 En desarrollo actualmente
 
+# Navegadores
+Se recomienda abrir en navegador Google Chrome que es en el que esta desarollada la aplicacion
+
 # Recursos utilizados
 Fonts de google Material Icons, Fuente de texto Fondamento. (se carga automaticamente)
 Imagen de la Rfeg (incluida en carpeta images)
@@ -36,7 +39,6 @@ Generar carpeta en el escritorio que contenga los archivos del repositorio
 5.- npm i bootstrap@5.2.3
 
 6.- npm install -g sass
-
 
 ## instalacion de scripts
 
