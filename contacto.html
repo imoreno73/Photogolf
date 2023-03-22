@@ -15,8 +15,8 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Photogolf</title>
     <script>
-        // function enviar_formulario() {
-            alert("Formulario enviado desde Java Script");
+        function enviar_formulario() {
+            /* alert("Formulario enviado desde Java Script");
             document.getElementById('enviar').addEventListener('click', function(e){
                 e.preventDefault();
                 let form= document.getElementById('form');
@@ -26,9 +26,9 @@
                     body:data
                 }).then(data, datos.json())
                 .then(datosformulario=>{console.log(datosformulario);})
-            });
-            // document.getElementById('enviar').submit();
-        // }
+            }); */
+            document.getElementById('enviar').submit();
+        }
     </script>
 </head>
 
@@ -76,17 +76,17 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="./contacto.html">Contacto</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./precios.html">Precios</a>
+                    </li>
                 </ul>
-                <!-- <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
+
             </div>
         </div>
     </nav>
     <div class="fondo">
         <form method="post" action="C:\xampp\htdocs\datos.php" id="form" class="was-validated" validate>
-            
+
             <div class="espacio col-9">
                 <h5>CAMPO A CONTACTAR</h5>
             </div>
@@ -103,7 +103,7 @@
                 </select>
                 <div id="Campotexto" class="form-text">Introduzca su campo</div>
                 <div id="CampoFeedback1" class="invalid-feedback">El campo seleccionado no es valido</div>
-                <div id="CampoFeedback2" class="valid-feedback">El campo seleccionado es valido</div>             
+                <div id="CampoFeedback2" class="valid-feedback">El campo seleccionado es valido</div>
             </div>
 
             <div class="espacio col-9">
@@ -129,14 +129,16 @@
             </div>
             <div class="direccion col-5">
                 <label for="Direccion" class="form-label">Direccion</label>
-                <input type="text" class="form-control has-validation" id="Direccion" name="´direccion" value="" required>
+                <input type="text" class="form-control has-validation" id="Direccion" name="´direccion" value=""
+                    required>
                 <div id="Direccion" class="form-text">Introduzca su direccion</div>
                 <div id="DireccionFeedback1" class="invalid-feedback">Direccion invalida</div>
-                <div id="DireccionFeedback2" class="valid-feedback">Direccion valida</div>                
+                <div id="DireccionFeedback2" class="valid-feedback">Direccion valida</div>
             </div>
             <div class="cp col-3">
                 <label for="Cp" class="form-label">Codigo postal</label>
-                <input type="text" class="form-control has-validation" id="Cp" name="cp" value="" maxlength="5" required>
+                <input type="text" class="form-control has-validation" id="Cp" name="cp" value="" maxlength="5"
+                    required>
                 <div id="Cp" class="form-text">Introduzca su Codigo postal</div>
                 <div id="CpFeedback1" class="invalid-feedback">Codigo postal invalido</div>
                 <div id="CpFeedback2" class="valid-feedback">Codigo postal valido</div>
@@ -146,14 +148,16 @@
             </div>
             <div class="email col-5">
                 <label for="Email" class="form-label">Email address</label>
-                <input type="email" class="form-control has-validation" id="Email" name="email" value="" required aria-describedby="emailHelp">
+                <input type="email" class="form-control has-validation" id="Email" name="email" value="" required
+                    aria-describedby="emailHelp">
                 <div id="EmailHelp" class="form-text">Introduzca su email</div>
                 <div id="EmailFeedback1" class="invalid-feedback">Correo electronico invalido</div>
                 <div id="EmailFeedback2" class="valid-feedback">Correo electronico valido</div>
             </div>
             <div class="telefono col-3">
                 <label for="Telefono" class="form-label">Telefono</label>
-                <input type="tel" class="form-control has-validation" id="telefono" name="Telefono" maxlength="9" value="" required>
+                <input type="tel" class="form-control has-validation" id="telefono" name="Telefono" maxlength="9"
+                    value="" required>
                 <div id="telefono" class="form-text">Introduzca su numero de telefono de 9 cifras</div>
                 <div id="TelefonoFeedback1" class="invalid-feedback text-danger">Telefono invalido</div>
                 <div id="TelefonoFeedback2" class="valid-feedback text-success">Telefono valido</div>
@@ -166,10 +170,13 @@
             </div>
             <div class="mensaje col-10">
                 <label for="Inputmensaje" class="form-label2">Mensaje:</label>
-                <textarea id="msg" name="msg" value="" class="form-control2 has-validation" id="Inputmensaje" rows="5" name="user_message" required></textarea>
+                <textarea id="msg" name="msg" value="" class="form-control2 has-validation" id="Inputmensaje" rows="5"
+                    name="user_message" required></textarea>
                 <div id="msgHelp" class="form-text">Escriba el motivo de su consulta</div>
-                <div id="InputmensajeFeedback1" class="form-label2 invalid-feedback text-danger">Motivo de consulta invalido</div>
-                <div id="InputmensajeFeedback2" class="form-label2 valid-feedback text-success">Motivo de consulta valido</div>
+                <div id="InputmensajeFeedback1" class="form-label2 invalid-feedback text-danger">Motivo de consulta
+                    invalido</div>
+                <div id="InputmensajeFeedback2" class="form-label2 valid-feedback text-success">Motivo de consulta
+                    valido</div>
             </div>
             <div class="check mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="Check1" name="check">
@@ -182,7 +189,11 @@
             </div>
             <div class="container-boton col-10">
                 <div class="boton col-1">
-                    <button type="submit" id="enviar" class="btn btn-success">Enviar</button>
+                    <button type="submit" id="enviar" class="btn btn-success">Enviar
+                        if(isset($_POST['enviar'])) {
+                        $nombre=$_POST['Nombre'];
+
+                    </button>
                 </div>
                 <div class="boton col-1">
                     <a href="./contacto.html" class="btn btn-warning">Recargar</a>

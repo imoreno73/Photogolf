@@ -11,14 +11,15 @@
 </body>
 <?php
 
-    $nombre=$_POST['nom'];
-    $campo= $_POST['camp'];
+    $nombre=$_POST['Nombre'];
+    $campo= $_POST['Campo'];
     $apellido= $_POST['last'];
     $direccion= $_POST['dir'];
     $cp=$_POST['codigo'];
     $telefono= $_POST['tel'];
     $msg= $_POST['mess'];
     $check= $_POST['chk'];
+    echo $_POST["name"];
     echo   "Nombre:$nombre<br>
             Campo:$campo<br>
             Apellido:$apellido<br>
