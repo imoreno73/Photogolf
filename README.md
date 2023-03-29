@@ -1,7 +1,7 @@
 # Photogolf
 Web de información de campos de golf P&P en España
 
-# Prototipo del proyecto y diseño gafico previo
+# Prototipo del proyecto y diseño grafico previo
 
 Enlace:
 https://www.figma.com/file/QILBcWERJV9UiH4k94RX1T/PhotoGolf?node-id=0%3A1&t=THDnxkP0mW7uIXwu-0
