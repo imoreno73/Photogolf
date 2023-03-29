@@ -142,7 +142,7 @@ footer {
   align-items: center;
 }
 
-.card-container, .tabla-precios {
+.card-container, .tabla-precios, .tabla-videos {
   background-color: #175812;
   height: 100%;
   width: 80%;
@@ -251,7 +251,7 @@ form {
   border-radius: 5px;
 }
 
-.titulo-precios {
+.titulo-precios, .titulo-videos {
   background-color: #26E7E7;
   height: 5%;
   width: 50%;
@@ -269,7 +269,7 @@ form {
   margin-bottom: 2%;
 }
 
-.botones-precios {
+.botones-precios, .botones-videos {
   height: 5%;
   width: auto;
   margin: auto;
