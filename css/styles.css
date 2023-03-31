@@ -2,7 +2,7 @@
   background-color: #175812;
   align-items: center;
   display: flex;
-  height: 100px;
+  height: 7em;
   justify-content: center;
 }
 
@@ -14,6 +14,7 @@
 .texto-rfeg {
   font-family: "Fondamento";
   color: #175812;
+  word-break: break-all;
 }
 
 .navbar,
@@ -33,13 +34,13 @@ nav-link {
 
 .banner {
   background-color: #F1E15A;
-  margin-top: 20px;
+  margin-top: 2%;
   margin-left: 10%;
   width: 80%;
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  height: 75px;
+  height: 2em;
   border-radius: 10px;
 }
 
@@ -49,13 +50,12 @@ nav-link {
 }
 
 .bandera {
-  height: 50px;
+  height: 70%;
   margin-right: 10%;
 }
 
 .banner-texto {
   font-family: "Fondamento";
-  height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,40 +67,25 @@ nav-link {
 
 .slider {
   background-color: #175812;
-  height: 850px;
+  height: 60%;
   width: 80%;
   margin-left: 10%;
   align-items: center;
   display: inline-flex;
   justify-content: flex-start;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  padding-left: 1%;
+  margin-bottom: 1%;
   border-radius: 10px;
   border: 5px #F1E15A solid;
 }
 
 .carousel-item {
-  max-height: 800px;
+  max-height: 90%;
   float: left;
   padding: 1%;
   margin: 1%;
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-.text {
-  background-color: #175812;
-  height: 375px;
-  width: 80%;
-  margin-left: 10%;
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  margin-top: 10px;
-  margin-right: 80px;
 }
 
 .texto {
@@ -110,38 +95,38 @@ nav-link {
   color: #f5f5f5;
   align-items: center;
   display: flex;
-  justify-content: end;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1%;
   border-radius: 5px;
   border: 3px #F1E15A solid;
-  padding: 5px;
+  padding: 1%;
   width: 40%;
 }
 
 footer {
   align-items: center;
   display: flex;
-  height: 100px;
+  height: 8em;
   justify-content: start;
 }
 
 .card-img-top {
-  height: 200px;
-  width: 100px;
+  height: 10em;
   background-color: #F1E15A;
 }
 
 .card {
   margin: 1%;
   padding: 1%;
-  height: 250px;
   justify-content: center;
   align-items: center;
 }
 
-.card-container, .tabla-precios, .tabla-videos {
+.card-container,
+.tabla-precios,
+.tabla-videos {
   background-color: #175812;
   height: 100%;
   width: 80%;
@@ -168,7 +153,12 @@ form {
   justify-content: center;
 }
 
-.nombre, .apellidos, .direccion, .cp, .email, .telefono {
+.nombre,
+.apellidos,
+.direccion,
+.cp,
+.email,
+.telefono {
   margin-left: 1%;
   font-family: "Fondamento";
   color: #f5f5f5;
@@ -207,7 +197,8 @@ form {
   background-color: #F7E594;
 }
 
-.espacio, .enviar {
+.espacio,
+.enviar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -248,9 +239,11 @@ form {
 
 .aside-texto {
   border-radius: 5px;
+  word-break: break-all;
 }
 
-.titulo-precios, .titulo-videos {
+.titulo-precios,
+.titulo-videos {
   background-color: #26E7E7;
   height: 5%;
   width: 50%;
@@ -268,7 +261,8 @@ form {
   margin-bottom: 2%;
 }
 
-.botones-precios, .botones-videos {
+.botones-precios,
+.botones-videos {
   height: 5%;
   width: auto;
   margin: auto;
@@ -277,7 +271,12 @@ form {
   margin-bottom: 2%;
 }
 
-.row-1, .row-2, .row-3, .row-4, .row-5, .row-6 {
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6 {
   background-color: #26E7E7;
   height: 30%;
   width: 90%;
