@@ -1,9 +1,10 @@
-$color1: #175812;
-$color2: #f5f5f5;
-$color3: #F7E594;
-$color4: #26E7E7;
-$color5: #F1E15A;
-$color6: #39D3CA;
+$color1: #ffffff;
+$color2: #427ec7;
+$color3: #427ec8;
+$color4: #ffffff;
+$color5: #427ec8;
+$color6: #ffffff;
+$color7: #e6ba2a;
 $font-family: 'Fondamento';
 
 
@@ -19,13 +20,21 @@ $font-family: 'Fondamento';
 .titulo {
     font-family: $font-family;
     color: $color2;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
 
-.texto-rfeg {
+.texto-fran {
     font-family: $font-family;
     color: $color1;
     word-break: break-all;
+
+}
+
+.instagram{
+    color: $color2;
+    
 
 }
 
@@ -41,7 +50,7 @@ footer {
 
 .navbar-brand,
 nav-link {
-    color: $color4;
+    color: $color1;
 }
 
 .banner {
@@ -68,6 +77,7 @@ nav-link {
 
 .banner-texto {
     font-family: $font-family;
+    color: $color1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +115,7 @@ nav-link {
     float: right;
     background-color: $color1;
     font-family: $font-family;
-    color: $color2;
+    color: $color1;
     align-items: center;
     display: flex;
     margin-top: 1%;
@@ -139,7 +149,21 @@ footer {
 
 }
 
-.card-container,
+.card-container {
+    background-color: $color1;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-right: 10%;
+    border-radius: 10px;
+    border: 5px $color7 solid;
+}
 .tabla-precios,
 .tabla-videos {
     background-color: $color1;
@@ -253,6 +277,8 @@ form {
     flex-wrap: wrap;
     align-items: start;
     justify-content: start;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .aside-texto {

@@ -1,5 +1,5 @@
 .jumbotron {
-  background-color: #175812;
+  background-color: #ffffff;
   align-items: center;
   display: flex;
   height: 7em;
@@ -8,32 +8,38 @@
 
 .titulo {
   font-family: "Fondamento";
-  color: #f5f5f5;
+  color: #427ec7;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.texto-rfeg {
+.texto-fran {
   font-family: "Fondamento";
-  color: #175812;
+  color: #ffffff;
   word-break: break-all;
+}
+
+.instagram {
+  color: #427ec7;
 }
 
 .navbar,
 footer {
   font-family: "Fondamento";
-  background-color: #F7E594;
+  background-color: #427ec8;
 }
 
 .menu {
-  color: #26E7E7;
+  color: #ffffff;
 }
 
 .navbar-brand,
 nav-link {
-  color: #26E7E7;
+  color: #ffffff;
 }
 
 .banner {
-  background-color: #F1E15A;
+  background-color: #427ec8;
   margin-top: 2%;
   margin-left: 10%;
   width: 80%;
@@ -45,7 +51,7 @@ nav-link {
 }
 
 .fondo {
-  background-color: #39D3CA;
+  background-color: #ffffff;
   height: 100%;
 }
 
@@ -56,6 +62,7 @@ nav-link {
 
 .banner-texto {
   font-family: "Fondamento";
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +73,7 @@ nav-link {
 }
 
 .slider {
-  background-color: #175812;
+  background-color: #ffffff;
   height: 60%;
   width: 80%;
   margin-left: 10%;
@@ -75,7 +82,7 @@ nav-link {
   justify-content: flex-start;
   margin-bottom: 1%;
   border-radius: 10px;
-  border: 5px #F1E15A solid;
+  border: 5px #427ec8 solid;
 }
 
 .carousel-item {
@@ -90,9 +97,9 @@ nav-link {
 
 .texto {
   float: right;
-  background-color: #175812;
+  background-color: #ffffff;
   font-family: "Fondamento";
-  color: #f5f5f5;
+  color: #ffffff;
   align-items: center;
   display: flex;
   margin-top: 1%;
@@ -100,7 +107,7 @@ nav-link {
   margin-right: 2%;
   margin-bottom: 1%;
   border-radius: 5px;
-  border: 3px #F1E15A solid;
+  border: 3px #427ec8 solid;
   padding: 1%;
   width: 40%;
 }
@@ -114,7 +121,7 @@ footer {
 
 .card-img-top {
   height: 10em;
-  background-color: #F1E15A;
+  background-color: #427ec8;
 }
 
 .card {
@@ -124,10 +131,8 @@ footer {
   align-items: center;
 }
 
-.card-container,
-.tabla-precios,
-.tabla-videos {
-  background-color: #175812;
+.card-container {
+  background-color: #ffffff;
   height: 100%;
   width: 80%;
   margin-left: 10%;
@@ -139,7 +144,24 @@ footer {
   margin-bottom: 2%;
   margin-right: 10%;
   border-radius: 10px;
-  border: 5px #F1E15A solid;
+  border: 5px #e6ba2a solid;
+}
+
+.tabla-precios,
+.tabla-videos {
+  background-color: #ffffff;
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-right: 10%;
+  border-radius: 10px;
+  border: 5px #427ec8 solid;
 }
 
 form {
@@ -161,22 +183,22 @@ form {
 .telefono {
   margin-left: 1%;
   font-family: "Fondamento";
-  color: #f5f5f5;
+  color: #427ec7;
 }
 
 .form-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #175812;
+  color: #ffffff;
 }
 
 .form-label {
-  color: #175812;
+  color: #ffffff;
 }
 
 .form-label2 {
-  color: #175812;
+  color: #ffffff;
   font-family: "Fondamento";
   margin-left: 10%;
 }
@@ -194,7 +216,7 @@ form {
 }
 
 .form-control {
-  background-color: #F7E594;
+  background-color: #427ec8;
 }
 
 .espacio,
@@ -204,8 +226,8 @@ form {
   align-items: center;
   justify-content: center;
   font-family: "Fondamento";
-  color: #175812;
-  background-color: #F1E15A;
+  color: #ffffff;
+  background-color: #427ec8;
   border-radius: 10px;
 }
 
@@ -225,7 +247,7 @@ form {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  color: #f5f5f5;
+  color: #427ec7;
 }
 
 .rfeg {
@@ -235,6 +257,8 @@ form {
   flex-wrap: wrap;
   align-items: start;
   justify-content: start;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .aside-texto {
@@ -244,7 +268,7 @@ form {
 
 .titulo-precios,
 .titulo-videos {
-  background-color: #26E7E7;
+  background-color: #ffffff;
   height: 5%;
   width: 50%;
   margin-left: 10%;
@@ -277,19 +301,17 @@ form {
 .row-4,
 .row-5,
 .row-6 {
-  background-color: #26E7E7;
+  background-color: #ffffff;
   height: 30%;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 10px;
-  border: 5px #175812 solid;
+  border: 5px #ffffff solid;
   margin: auto !important;
 }
 
 .table-responsive {
   font-family: "Fondamento";
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
