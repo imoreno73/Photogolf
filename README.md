@@ -10,18 +10,17 @@ https://www.figma.com/file/QILBcWERJV9UiH4k94RX1T/PhotoGolf?node-id=0%3A1&t=THDn
 En desarrollo actualmente
 
 # Navegadores
-Se recomienda abrir en navegador Google Chrome que es en el que esta desarollada la aplicacion
+Se recomienda abrir en navegador Google Chrome o edge que es en el que esta desarollada la aplicacion
 
 # Recursos utilizados
 Fonts de google Material Icons, Fuente de texto Fondamento. (se carga automaticamente)
-Imagen de la Rfeg (incluida en carpeta images)
 Banderas de las comunidades autonomas de españa (incluida en carpeta images)
-Imagenes de distintos campos de Golf de P&P de España (incluidos en carpeta images)
+Imagenes de hipica y equipo moreno(incluidos en carpeta images)
 Iconos de distintos elementos de la pagina (incluidos en carpeta images)
 
 # Tecnologias
 Html, Javascript, Bootstrap versión 5.2.3, Css, Sass, Git.
-Php para datos de formulario.
+Php para datos de formulario.(pendiente hacer que funcione bien)
 Sourcetree para control del repositorio (comandos hechos por terminal Bash)
 
 # Instalación
