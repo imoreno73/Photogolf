@@ -12,7 +12,6 @@
 <?php
 
     $nombre=$_POST['Nombre'];
-    $campo= $_POST['Campo'];
     $apellido= $_POST['last'];
     $direccion= $_POST['dir'];
     $cp=$_POST['codigo'];
@@ -21,7 +20,6 @@
     $check= $_POST['chk'];
     echo $_POST["name"];
     echo   "Nombre:$nombre<br>
-            Campo:$campo<br>
             Apellido:$apellido<br>
             Direccion:$direccion<br>
             Codigo postal:$cp<br>
